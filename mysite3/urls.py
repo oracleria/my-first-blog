@@ -19,6 +19,5 @@ from kilogram import views as kilogram_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', kilogram_views.IndexView.as_view(), name = "root"),
-    url(r'^kilogram/', include('kilogram.urls')),
+    url(r'', include('kilogram.urls')),
 ]
